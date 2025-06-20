@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Giovanna & Miguel - Casamento</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 3rem;
+      color: #c2185b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+    header h1 .heart {
+      font-size: 2.5rem;
+      color: #c2185b;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+
+    section {
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 40px;
+      padding: 0 15px;
+    }
+
+    section h2 {
+      color: #c2185b;
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #c2185b;
+      padding-bottom: 5px;
+    }
+
+    #dresscode p, #dresscode ul, #local p {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    #dresscode .highlight {
+      color: #c2185b;
+      font-weight: bold;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .images img {
+      max-width: 100%;
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(194, 24, 91, 0.3);
+      transition: transform 0.3s ease;
+      object-fit: contain;
+      background: white;
+      padding: 5px;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+    }
+
+    .rsvp {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .rsvp a {
+      background-color: #c2185b;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(194, 24, 91, 0.3);
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .rsvp a:hover {
+      background-color: #a3154b;
+    }
+
+    iframe {
+      border: 0;
+      border-radius: 8px;
+      width: 100%;
+      height: 300px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      border-top: 1px solid #eee;
+      padding: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .images img {
+        width: 90%;
+        max-width: 250px;
+      }
+
+      .rsvp a {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><span>G</span><span class="heart">♥</span><span>M</span></h1>
+    <p>19 de julho de 2025 - 9:30 da manhã</p>
+  </header>
+
+  <section id="dresscode">
+    <h2>Dress Code</h2>
+    <p>Nosso casamento será em pleno inverno, mas, como estamos em São Paulo, o clima pode surpreender.</p>
+    <p>Por isso, é sempre bom estar preparado para um dia mais fresco ou até um pouco mais quente. O espaço é coberto, porém aberto.</p>
+    <p><span class="highlight">Traje: Social/Esporte fino</span></p>
+    <p><span class="highlight">Para os homens:</span> Camisa social com calça ou terno com ou sem gravata.</p>
+    <p><span class="highlight">Para as mulheres:</span> Vestidos e saias midi ou longas, além de macacões, todos em tecidos elegantes e apropriados para a ocasião.</p>
+    <p>As madrinhas estarão usando <span class="highlight">rosa fúcsia</span>, essa cor é exclusiva para elas.</p>
+    <p>As únicas cores <span class="highlight">PROIBIDAS</span> são <span class="highlight">preto, branco, off-white</span> ou tons muito claros que são reservados para a noiva.</p>
+    <p>Deixamos algumas inspirações de roupas para te ajudar a escolher.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Inspirações de Looks</h2>
+    <div class="images">
+      <img src="inspiracao.jpeg" alt="Inspiração de looks" />
+    </div>
+  </section>
+
+  <section class="rsvp">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5j5BywIFvWvoalX7krLpS1cRnJx2a_yLPN59svfURmWmdxg/viewform" target="_blank" rel="noopener noreferrer">Confirmar Presença</a>
+  </section>
+
+  <section id="local">
+    <h2>Local do Evento</h2>
+    <p>Av. Washington Luís, 3001 - Santo Amaro, São Paulo - SP, 04660-000</p>
+    <iframe
+      src="https://www.google.com/maps?q=Av.+Washington+Lu%C3%ADs,+3001+-+Santo+Amaro,+S%C3%A3o+Paulo+-+SP,+04660-000&output=embed"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    Com amor, Giovanna & Miguel ♥
+  </footer>
+
+</body>
+</html>
